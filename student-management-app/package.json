@@ -21,7 +21,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && rmdir /s /q node_modules\\.cache\\gh-pages",
     "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
